@@ -1,5 +1,5 @@
 # btfu
-BeTter File backUp (: Back TF Up :)
+###BeTter File backUp (: Back TF Up :)
 
 
 a simple shell script that Backup files for you.
