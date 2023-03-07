@@ -5,11 +5,11 @@
 a simple shell script that Backup files for you.
 make it executable
 
-``sudo chmod +x btfu``sh
+``$ sudo chmod +x btfu``
 
 then move it to /bin
 
-``sudo mv btfu /bin/``sh
+``$ sudo mv btfu /bin/``
 
 
 now anywhere you run the command 
