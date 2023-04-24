@@ -1,0 +1,11 @@
+#!/bin/bash
+
+export FILES=$(find ./* -mtime +30 -type f -size +10M -size -100M -exec ls "{}" \; | grep -e ".log" -e ".gz")
+cp $FILES /home/old/
+export DATE_TEXT=$(date -I"date")
+tar -cf "/home/old-bup-$DATE_TEXT.tar.gz" ./*
+echo "File Backup Successfully Done :)"
+echo "Backup file saved with name :"
+echo "old-bup-$DATE_TEXT.tar.gz"
+echo "in directory : "
+echo "/home/"
